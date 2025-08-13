@@ -5,10 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerjoler - Landing Page</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg">
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 w-full flex items-center z-10 py-4">
+        <div class="container lg:px-16">
+          <div class="flex items-center justify-between relative">
+            <div class="w-40">
+              <img src="./img/logo-kerjoler.png" alt="Logo"/>
+            </div>
+ 
+            <div class="flex items-center px-4">
+              <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                <span
+                  class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+                ></span>
+                <span
+                  class="hamburger-line transition duration-300 ease-in-out"
+                ></span>
+                <span
+                  class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+                ></span>
+              </button>
+  
+              <nav
+                id="nav-menu"
+                class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[300px] w-full right-3 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none text-center"
+              >
+                <ul class="block lg:flex">
+                  <li class="group">
+                    <a href="#" class="text-base text-black lg:text-kerjolerBlack font-normal py-2 mx-8 flex group-hover:opacity-80">Virtual Space</a>
+                  </li>
+                  <li class="group">
+                    <a href="#" class="text-base text-black lg:text-kerjolerBlack font-normal py-2 mx-8 flex group-hover:opacity-80">Office Space</a>
+                  </li>
+                  <li class="group">
+                    <a href="#" class="text-base text-black lg:text-kerjolerBlack font-normal py-2 mx-8 flex group-hover:opacity-80">Location</a>
+                  </li>
+                  <li class="group">
+                    <a href="#" class="text-base text-black lg:text-kerjolerBlack font-normal py-2 mx-8 flex group-hover:opacity-80">About</a>
+                  </li>
+                  <li class="group py-4 px-8 lg:py-0 lg:px-0">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="lg:hidden text-base font-semibold text-black bg-transparent py-2 px-8 rounded-full hover:shadow-lg border-2 border-black hover:opacity-80 transition duration-300 ease-in-out hover:bg-black hover:text-white">Download Deck</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+ 
+            <div class="w-48">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="hidden lg:flex text-base font-semibold lg:text-white bg-slate-100/10 py-3 px-8 rounded-full hover:shadow-lg border border-none hover:opacity-80 transition duration-300 ease-in-out">Download Deck</a>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="block font-gilroy-bold text-dark text-3xl mt-1 lg:text-5xl">
+              Back to The Workspace Safer and Smarter.
+            </h1>
+
+            <p class="font-medium text-secondary mb-10 leading-relaxed">
+              Work with like-minded professionals in our dynamic coworking space. Drop in and book a hot desk, or a private space in one of our co-working spaces, across thousands of locations. 
+Design a dynamic workspace for your team.</span>
+            </p>
+
+            <a
+              href="#"
+              class="text-base font-semibold text-black bg-sage-green py-3 px-8 hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              >Get started</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-9 lg:right-0">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section End -->
+
 </body>
 </html>
